@@ -9,7 +9,7 @@ export class ExampleComponent implements OnInit {
   title = 'mi componente angular';
   initialValue = 0;
   constructor() {
-    // this.loadScripts();
+    this.loadScripts();
   }
 
   loadScripts() {
