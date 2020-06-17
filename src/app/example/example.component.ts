@@ -14,7 +14,7 @@ export class ExampleComponent implements OnInit {
 
   loadScripts() {
     const dynamicScripts = [
-      'https://wc-base.netlify.app/repo.0d01a177.js',
+      'https://wc-base.netlify.app/repo.68f5b14f.js',
     ];
     for (let i = 0; i < dynamicScripts.length; i++) {
       const node = document.createElement('script');
