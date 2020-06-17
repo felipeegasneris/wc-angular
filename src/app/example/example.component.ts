@@ -9,12 +9,12 @@ export class ExampleComponent implements OnInit {
   title = 'mi componente angular';
   initialValue = 0;
   constructor() {
-    this.loadScripts();
+    // this.loadScripts();
   }
 
   loadScripts() {
     const dynamicScripts = [
-      'https://wc-base.netlify.app/repo.68f5b14f.js',
+      'https://wc-base.netlify.app/repo.e189f389.js',
     ];
     for (let i = 0; i < dynamicScripts.length; i++) {
       const node = document.createElement('script');
