@@ -8,28 +8,12 @@ export class ExampleComponent implements OnInit {
 
   title = 'mi componente angular';
   initialValue = 0;
-  constructor() {
-    this.loadScripts();
-  }
+  constructor() {}
 
-  loadScripts() {
-    const dynamicScripts = [
-      'https://wc-base.netlify.app/repo.e189f389.js',
-    ];
-    for (let i = 0; i < dynamicScripts.length; i++) {
-      const node = document.createElement('script');
-      node.src = dynamicScripts[i];
-      node.type = 'text/javascript';
-      node.async = false;
-      node.charset = 'utf-8';
-      document.getElementsByTagName('head')[0].appendChild(node);
-    }
-  }
   ngOnInit(): void {
   }
 
   showData(ev: any):void {
-    console.log(ev.detail);
     this.initialValue = ev.detail.counter;
   }
 
